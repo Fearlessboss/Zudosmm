@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#080a12" />
+    <meta
+      name="description"
+      content="ZUDO SMM PANEL — your social operations, beautifully organized. Secure wallet, transparent pricing and one workspace for every order."
+    />
+    <title>ZUDO SMM PANEL — Social, elevated.</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div id="root">
+      <div class="boot">ZUDO<span class="spinner"></span></div>
+    </div>
+    <div id="toasts" aria-live="polite" aria-atomic="false"></div>
+    <dialog id="confirm-dialog">
+      <form method="dialog">
+        <span class="eyebrow">PLEASE CONFIRM</span>
+        <h2 id="confirm-title">Confirm action</h2>
+        <p id="confirm-text"></p>
+        <div class="row end">
+          <button class="button secondary" value="cancel">Cancel</button
+          ><button class="button" value="yes">Confirm</button>
+        </div>
+      </form>
+    </dialog>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+
+> zudo-smm-panel@1.0.0 start
+> node src/migrate.js && node src/server.js
+
+Database migrations and owner provisioning complete
+ZUDO SMM PANEL listening on port 3000
