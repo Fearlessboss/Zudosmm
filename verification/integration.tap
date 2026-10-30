@@ -1,0 +1,165 @@
+
+> zudo-smm-panel@1.0.0 test
+> node --test --test-concurrency=1 tests/*.test.cjs
+
+TAP version 13
+# Database migrations and owner provisioning complete
+# Subtest: health, static assets, separate login pages, protected routes and missing routes
+ok 1 - health, static assets, separate login pages, protected routes and missing routes
+  ---
+  duration_ms: 540.08172
+  type: 'test'
+  ...
+# Subtest: CSRF rejects missing tokens and forged origins
+ok 2 - CSRF rejects missing tokens and forged origins
+  ---
+  duration_ms: 13.667345
+  type: 'test'
+  ...
+# Subtest: registration validates passwords and uniqueness; cannot register reserved owner
+ok 3 - registration validates passwords and uniqueness; cannot register reserved owner
+  ---
+  duration_ms: 958.643278
+  type: 'test'
+  ...
+# Subtest: owner authentication is separate and role-based
+ok 4 - owner authentication is separate and role-based
+  ---
+  duration_ms: 946.667074
+  type: 'test'
+  ...
+# Subtest: owner add balance is atomic, audited and idempotent
+ok 5 - owner add balance is atomic, audited and idempotent
+  ---
+  duration_ms: 43.103861
+  type: 'test'
+  ...
+# Subtest: deductions never allow negative balances including concurrent operations
+ok 6 - deductions never allow negative balances including concurrent operations
+  ---
+  duration_ms: 18.198015
+  type: 'test'
+  ...
+# Subtest: UPI deposit submission persists and rejects duplicate UTR across users
+ok 7 - UPI deposit submission persists and rejects duplicate UTR across users
+  ---
+  duration_ms: 19.497485
+  type: 'test'
+  ...
+# Subtest: concurrent deposit approvals credit exactly once
+ok 8 - concurrent deposit approvals credit exactly once
+  ---
+  duration_ms: 34.39209
+  type: 'test'
+  ...
+# Subtest: rejection never credits funds
+ok 9 - rejection never credits funds
+  ---
+  duration_ms: 16.725674
+  type: 'test'
+  ...
+# Subtest: dynamic catalogue and 60 percent server-side pricing
+ok 10 - dynamic catalogue and 60 percent server-side pricing
+  ---
+  duration_ms: 39.447394
+  type: 'test'
+  ...
+# Subtest: order charge, immutable snapshot and duplicate-order protection
+ok 11 - order charge, immutable snapshot and duplicate-order protection
+  ---
+  duration_ms: 32.713985
+  type: 'test'
+  ...
+# Subtest: new markup changes future quotes but not past orders; stale quotes rejected
+ok 12 - new markup changes future quotes but not past orders; stale quotes rejected
+  ---
+  duration_ms: 25.787465
+  type: 'test'
+  ...
+# Subtest: status refresh and terminal idempotency
+ok 13 - status refresh and terminal idempotency
+  ---
+  duration_ms: 21.12491
+  type: 'test'
+  ...
+# Subtest: explicit provider rejection refunds exactly once
+ok 14 - explicit provider rejection refunds exactly once
+  ---
+  duration_ms: 19.892367
+  type: 'test'
+  ...
+# Subtest: ambiguous response reserves funds and requires audited owner reconciliation
+ok 15 - ambiguous response reserves funds and requires audited owner reconciliation
+  ---
+  duration_ms: 26.620748
+  type: 'test'
+  ...
+# Subtest: package order uses a one-time rate, not a per-1000 calculation
+ok 16 - package order uses a one-time rate, not a per-1000 calculation
+  ---
+  duration_ms: 9.56727
+  type: 'test'
+  ...
+# Subtest: partial provider fulfillment gives an atomic proportional refund
+ok 17 - partial provider fulfillment gives an atomic proportional refund
+  ---
+  duration_ms: 22.394645
+  type: 'test'
+  ...
+# Subtest: support ticket messages, owner response, role isolation and closure
+ok 18 - support ticket messages, owner response, role isolation and closure
+  ---
+  duration_ms: 49.475807
+  type: 'test'
+  ...
+# Subtest: owner user search, per-user histories, audit logs, totals and transaction ledger
+ok 19 - owner user search, per-user histories, audit logs, totals and transaction ledger
+  ---
+  duration_ms: 29.611235
+  type: 'test'
+  ...
+# Subtest: suspension invalidates active sessions and prevents login
+ok 20 - suspension invalidates active sessions and prevents login
+  ---
+  duration_ms: 675.179327
+  type: 'test'
+  ...
+# Subtest: password update invalidates other sessions; owner password is env-only
+ok 21 - password update invalidates other sessions; owner password is env-only
+  ---
+  duration_ms: 977.196184
+  type: 'test'
+  ...
+# Subtest: insufficient funds, quantity bounds, missing media and unsafe links are rejected
+ok 22 - insufficient funds, quantity bounds, missing media and unsafe links are rejected
+  ---
+  duration_ms: 21.486688
+  type: 'test'
+  ...
+# Subtest: media-likers payload, paise rounding and canceled-order refund are correct
+ok 23 - media-likers payload, paise rounding and canceled-order refund are correct
+  ---
+  duration_ms: 29.837304
+  type: 'test'
+  ...
+# Subtest: owner can link an uncertain order after verification and refresh its status
+ok 24 - owner can link an uncertain order after verification and refresh its status
+  ---
+  duration_ms: 29.490024
+  type: 'test'
+  ...
+# Subtest: SQL injection and markup input cannot alter queries; logout destroys session
+ok 25 - SQL injection and markup input cannot alter queries; logout destroys session
+  ---
+  duration_ms: 16.748869
+  type: 'test'
+  ...
+1..25
+# tests 25
+# suites 0
+# pass 25
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 4759.007675

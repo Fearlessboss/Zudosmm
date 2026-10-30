@@ -1,0 +1,42 @@
+{
+  "tests": [
+    {
+      "name": "Landing renders on desktop and mobile without CSP errors",
+      "status": "passed"
+    },
+    {
+      "name": "Registration creates a real PostgreSQL account and secure session",
+      "status": "passed"
+    },
+    {
+      "name": "Dashboard mobile navigation and all user sections",
+      "status": "passed"
+    },
+    {
+      "name": "Live catalogue, search, filters and server-side quote (no paid order)",
+      "status": "passed"
+    },
+    {
+      "name": "Deposit submission and support forms persist without crediting unverified funds",
+      "status": "passed"
+    },
+    {
+      "name": "Separate owner login with environment-supplied credentials",
+      "status": "passed"
+    },
+    {
+      "name": "Owner add and deduct balance forms and confirmation dialog",
+      "status": "passed"
+    },
+    {
+      "name": "Owner deposit rejection, support response and all owner pages",
+      "status": "passed"
+    },
+    {
+      "name": "Refresh persistence and logout",
+      "status": "passed"
+    }
+  ],
+  "browserErrors": [],
+  "liveOrdersPlaced": 0
+}
